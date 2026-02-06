@@ -234,10 +234,34 @@ function App() {
                 <span className="chip">LinkedIn: Vedant Kasaudhan</span>
               </div>
             </div>
-            <form className="cta__form">
-              <input type="email" placeholder="you@futuremail.com" />
-              <button className="btn btn--primary" type="submit">Request collaboration</button>
-            </form>
+            <form
+  className="cta__form"
+  action="https://formspree.io/f/xwvnedwn"
+  method="POST"
+>
+  <input
+    type="email"
+    name="email"
+    placeholder="you@futuremail.com"
+    required
+  />
+
+  <textarea
+    name="message"
+    placeholder="Write your message..."
+    required
+  ></textarea>
+
+  <button className="btn btn--primary" type="submit">
+    Request collaboration
+  </button>
+
+  <p className="form__note">
+    ✅ Message will be sent directly to my email.
+  </p>
+</form>
+
+
           </div>
         </section>
       </main>
