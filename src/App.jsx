@@ -268,25 +268,29 @@ function App() {
 
 
         <section id="education" className="section">
-          <div className="section__header">
-            <h2>Education</h2>
-            <p>Strong academic foundation with focus on AI/ML and computer science.</p>
-          </div>
-          <div className="grid">
-            <div className="card glass">
-              <h3>B.Tech CSE (AIML)</h3>
-              <p className="muted">Galgotias University • 2023 — 2027 • CGPA: 7.9</p>
-            </div>
-            <div className="card glass">
-              <h3>Senior Secondary (12th)</h3>
-              <p className="muted">Jawahar Navodaya Vidyalaya • 2023 • 70.0%</p>
-            </div>
-            <div className="card glass">
-              <h3>Secondary (10th)</h3>
-              <p className="muted">Jawahar Navodaya Vidyalaya • 2021 • 89.2%</p>
-            </div>
-          </div>
-        </section>
+  <div className="section__header">
+    <h2>Education</h2>
+    <p>Strong academic foundation with focus on AI/ML and computer science.</p>
+  </div>
+
+  <div className="grid">
+    <div className="card glass">
+      <h3>B.Tech CSE (AIML)</h3>
+      <p className="muted">Galgotias University • 2023 — 2027</p>
+    </div>
+
+    <div className="card glass">
+      <h3>Senior Secondary (12th)</h3>
+      <p className="muted">Jawahar Navodaya Vidyalaya • 2023</p>
+    </div>
+
+    <div className="card glass">
+      <h3>Secondary (10th)</h3>
+      <p className="muted">Jawahar Navodaya Vidyalaya • 2021</p>
+    </div>
+  </div>
+</section>
+
 
         <section id="contact" className="section section--cta">
           <div className="cta glass">
