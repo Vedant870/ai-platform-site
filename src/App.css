@@ -512,3 +512,83 @@
   text-align:center;
   margin-top:4px;
 }
+
+/* ===== Neon Glow + Premium Hover Cards ===== */
+
+.card{
+  position:relative;
+  transition:transform 0.35s ease, box-shadow 0.35s ease;
+  overflow:hidden;
+}
+
+.card::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  background:linear-gradient(120deg,#6a5cff,#00f7ff,#9b5cff);
+  opacity:0;
+  filter:blur(18px);
+  z-index:-1;
+  transition:opacity 0.35s ease;
+}
+
+.card:hover{
+  transform:translateY(-10px) scale(1.02);
+  box-shadow:0 0 25px rgba(0,255,255,0.25),
+             0 0 40px rgba(140,90,255,0.25);
+}
+
+.card:hover::before{
+  opacity:1;
+}
+
+/* ===== Profile Photo Styling ===== */
+
+.profile__wrap{
+  display:flex;
+  justify-content:center;
+  margin-bottom:18px;
+}
+
+.profile__img{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid rgba(0,255,255,0.6);
+  box-shadow:0 0 25px rgba(0,255,255,0.35),
+             0 0 35px rgba(120,90,255,0.25);
+  transition:0.3s ease;
+}
+
+.profile__img:hover{
+  transform:scale(1.07);
+  box-shadow:0 0 35px rgba(0,255,255,0.55),
+             0 0 55px rgba(150,90,255,0.45);
+}
+/* ===== AI Profile Photo Glow ===== */
+
+.profile__wrap{
+  display:flex;
+  justify-content:center;
+  margin-bottom:18px;
+}
+
+.profile__img{
+  width:95px;
+  height:95px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid rgba(0,255,255,0.7);
+
+  box-shadow:0 0 18px rgba(0,255,255,0.45),
+             0 0 35px rgba(120,90,255,0.35);
+
+  transition:0.3s ease;
+}
+
+.profile__img:hover{
+  transform:scale(1.08);
+  box-shadow:0 0 25px rgba(0,255,255,0.65),
+             0 0 55px rgba(150,90,255,0.55);
+}

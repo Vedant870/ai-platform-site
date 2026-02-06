@@ -1,4 +1,21 @@
 import './App.css'
+import Tilt from "react-parallax-tilt";
+import profile from "./assets/profile.png";
+
+<div className="panel__body">
+
+  <div className="profile__wrap">
+    <img
+      src={profile}
+      alt="Vedant Kasaudhan"
+      className="profile__img"
+    />
+  </div>
+
+  <div className="chip">Aspiring Software Engineer</div>
+  ...
+</div>
+
 
 function App() {
   return (
@@ -78,29 +95,39 @@ function App() {
           </div>
           <div className="grid">
             {[
-              {
-                title: 'Web & Programming',
-                desc: 'JavaScript (ES6+), Python, Java, HTML5, CSS3, REST APIs.',
-              },
-              {
-                title: 'Frontend & Backend',
-                desc: 'React.js, Node.js, Express.js, responsive UI systems.',
-              },
-              {
-                title: 'AI/ML + Vision',
-                desc: 'OpenCV, AI prompt tooling, model tuning for real-time inference.',
-              },
-              {
-                title: 'Databases & Tools',
-                desc: 'MySQL, MongoDB, Postman, Git, Linux, Google Maps & Places API.',
-              },
-            ].map((item) => (
-              <div key={item.title} className="card glass">
-                <h3>{item.title}</h3>
-                <p>{item.desc}</p>
-                <span className="card__tag">AI-ready</span>
-              </div>
-            ))}
+  {
+    title: 'Web & Programming',
+    desc: 'JavaScript (ES6+), Python, Java, HTML5, CSS3, REST APIs.',
+  },
+  {
+    title: 'Frontend & Backend',
+    desc: 'React.js, Node.js, Express.js, responsive UI systems.',
+  },
+  {
+    title: 'AI/ML + Vision',
+    desc: 'OpenCV, AI prompt tooling, model tuning for real-time inference.',
+  },
+  {
+    title: 'Databases & Tools',
+    desc: 'MySQL, MongoDB, Postman, Git, Linux, Google Maps & Places API.',
+  },
+].map((item) => (
+  <Tilt
+    key={item.title}
+    tiltMaxAngleX={10}
+    tiltMaxAngleY={10}
+    glareEnable={true}
+    glareMaxOpacity={0.25}
+    scale={1.03}
+  >
+    <div className="card glass">
+      <h3>{item.title}</h3>
+      <p>{item.desc}</p>
+      <span className="card__tag">AI-ready</span>
+    </div>
+  </Tilt>
+))}
+
           </div>
         </section>
 
@@ -142,18 +169,28 @@ function App() {
                 ],
               },
             ].map((project) => (
-              <div key={project.title} className="card card--project glass">
-                <h3>{project.title}</h3>
-                <p className="muted">{project.stack}</p>
-                <p>{project.impact}</p>
-                <ul>
-                  {project.details.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-                <button className="btn btn--outline">View Case Study</button>
-              </div>
-            ))}
+  <Tilt
+    key={project.title}
+    tiltMaxAngleX={10}
+    tiltMaxAngleY={10}
+    glareEnable={true}
+    glareMaxOpacity={0.25}
+    scale={1.03}
+  >
+    <div className="card card--project glass">
+      <h3>{project.title}</h3>
+      <p className="muted">{project.stack}</p>
+      <p>{project.impact}</p>
+      <ul>
+        {project.details.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+      <button className="btn btn--outline">View Case Study</button>
+    </div>
+  </Tilt>
+))}
+
           </div>
           <div className="ticker">
             <span>✨ AI Vision</span>
@@ -165,42 +202,70 @@ function App() {
         </section>
 
         <section id="experience" className="section">
-          <div className="section__header">
-            <h2>Experience & leadership</h2>
-            <p>Hands-on roles building scalable systems and collaborating in open-source environments.</p>
-          </div>
-          <div className="grid">
-            <div className="card glass">
-              <h3>AI Intern @ HRFI</h3>
-              <p className="muted">2025 • Stipend-based</p>
-              <ul>
-                <li>Worked on backend logic and data processing for AI-driven workflows.</li>
-                <li>Improved reliability and performance through debugging and optimization.</li>
-                <li>Supported scalable architecture for production-level codebases.</li>
-              </ul>
-            </div>
-            <div className="card glass">
-              <h3>Open Source Contributor @ GSSoC</h3>
-              <p className="muted">2024</p>
-              <ul>
-                <li>Contributed code, bug fixes, and enhancements via Git-based workflows.</li>
-                <li>Collaborated on modular, reusable components and best practices.</li>
-                <li>Maintained clean documentation and peer-reviewed contributions.</li>
-              </ul>
-            </div>
-            <div className="card glass">
-              <h3>Certifications</h3>
-              <p className="muted">AI + Full-stack</p>
-              <ul>
-                <li>Full Stack Developer — GeeksforGeeks</li>
-                <li>C++ (Intermediate) — HackerRank</li>
-                <li>AWS Cloud Foundation — AWS</li>
-                <li>Java for Beginners — HCL Guvi</li>
-                <li>Mist-AI Virtual Internship — Juniper Networks</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+  <div className="section__header">
+    <h2>Experience & leadership</h2>
+    <p>Hands-on roles building scalable systems and collaborating in open-source environments.</p>
+  </div>
+
+  <div className="grid">
+    <Tilt
+      tiltMaxAngleX={10}
+      tiltMaxAngleY={10}
+      glareEnable={true}
+      glareMaxOpacity={0.25}
+      scale={1.03}
+    >
+      <div className="card glass">
+        <h3>AI Intern @ HRFI</h3>
+        <p className="muted">2025 • Stipend-based</p>
+        <ul>
+          <li>Worked on backend logic and data processing for AI-driven workflows.</li>
+          <li>Improved reliability and performance through debugging and optimization.</li>
+          <li>Supported scalable architecture for production-level codebases.</li>
+        </ul>
+      </div>
+    </Tilt>
+
+    <Tilt
+      tiltMaxAngleX={10}
+      tiltMaxAngleY={10}
+      glareEnable={true}
+      glareMaxOpacity={0.25}
+      scale={1.03}
+    >
+      <div className="card glass">
+        <h3>Open Source Contributor @ GSSoC</h3>
+        <p className="muted">2024</p>
+        <ul>
+          <li>Contributed code, bug fixes, and enhancements via Git-based workflows.</li>
+          <li>Collaborated on modular, reusable components and best practices.</li>
+          <li>Maintained clean documentation and peer-reviewed contributions.</li>
+        </ul>
+      </div>
+    </Tilt>
+
+    <Tilt
+      tiltMaxAngleX={10}
+      tiltMaxAngleY={10}
+      glareEnable={true}
+      glareMaxOpacity={0.25}
+      scale={1.03}
+    >
+      <div className="card glass">
+        <h3>Certifications</h3>
+        <p className="muted">AI + Full-stack</p>
+        <ul>
+          <li>Full Stack Developer — GeeksforGeeks</li>
+          <li>C++ (Intermediate) — HackerRank</li>
+          <li>AWS Cloud Foundation — AWS</li>
+          <li>Java for Beginners — HCL Guvi</li>
+          <li>Mist-AI Virtual Internship — Juniper Networks</li>
+        </ul>
+      </div>
+    </Tilt>
+  </div>
+</section>
+
 
         <section id="education" className="section">
           <div className="section__header">
