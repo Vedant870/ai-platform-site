@@ -338,7 +338,7 @@ function App() {
       <footer className="footer">
         <span>© 2026 Vedant Kasaudhan. Crafted for the AI era.</span>
         <div className="footer__links">
-          <a href="https://leetcode.com/" target="_blank" rel="noreferrer">LeetCode</a>
+          <a href="https://leetcode.com/u/vedantkasaudhan8707/" target="_blank" rel="noreferrer">LeetCode</a>
           <a href="https://github.com/vedant870" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/vedant-kasaudhan-9a444a291/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
