@@ -1,16 +1,41 @@
-# React + Vite
+# Vedant Kasaudhan — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains my personal portfolio website and highlights the projects I’m building, including backend applications, AI tools, and DSA practice repositories.
 
-Currently, two official plugins are available:
+## 🚀 About Me
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I’m a Fourth-year BTech Computer Science student and GEN-AI Intern. I build backend-first applications, automate workflows with Java, and solve problems through data structures and algorithms.
 
-## React Compiler
+## 💼 Featured Projects
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Job_Mail-MCP** — Java placement automation and recruiter communication system.
+- **Portifolio** — My portfolio website built with React, Three.js, GSAP, and Tailwind CSS.
+- **Advance-DSA-problems** — A collection of Java DSA solutions for interview readiness.
 
-## Expanding the ESLint configuration
+## ⚙️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Tailwind CSS
+- Three.js
+- GSAP
+- Java
+- Git & GitHub
+
+## 📌 Local Setup
+
+```bash
+npm install
+npm run dev
+```
+
+Then open `http://localhost:5173` in your browser.
+
+## 📫 Connect with Me
+
+- GitHub: https://github.com/Vedant870
+- LinkedIn: https://www.linkedin.com/in/vedant-kasaudhan-9a444a291/
+- LeetCode: https://leetcode.com/u/vedantkasaudhan8707/
+
+## 📝 Notes
+
+This folder currently does not have a Git repository initialized, so I cannot push updates directly from here. If you want, I can help you initialize the repo locally and set up the GitHub remote so the site can be committed and deployed.
